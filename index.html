@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog-Web</title>
+  </head>
+
+  <body>
+    <div>
+      <!--Header section-->
+      <header
+        class="w-full mb-4 py-4 px-3 flex justify-between items-center sticky top-0 z-10 backdrop-blur-md"
+      >
+        <!-- Nav divs -->
+        <!-- Logo div -->
+        <div class="flex items-center">
+          <img src="./res/assets/Mlogo.svg" alt="" />
+          <h1 class="font-bold font-Playfair text-xl">Homey.Co</h1>
+        </div>
+
+        <!-- Cart & Menu div -->
+        <!-- cart btn -->
+        <div class="flex items-center gap-6">
+          <button
+            type="button"
+            class="py-2 px-4 bg-gray-500 rounded-full font-semibold font-Playwrite"
+          >
+            View Cart
+          </button>
+          <!-- Menu bar -->
+          <div>
+            <i class="fa-solid fa-bars-staggered text-2xl"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main section -->
+      <main class="w-full py-3 px-5">
+        <!-- hero -->
+        <div
+          class="mb-4 w-full flex flex-col justify-center items-center gap-4"
+        >
+          <h2 class="font-Playwrite font-bold text-xl">
+            DISCOVER OUR HOME DECOR
+          </h2>
+          <!-- hero img section -->
+          <div class="w-full relative">
+            <img src="./res/assets/hero-img.jpg" alt="" />
+            <div
+              class="flex flex-col items-center justify-center py-4 px-3 w-full bottom-0 absolute backdrop-blur-[20px] gap-6"
+            >
+              <p
+                class="text-black text-2xl text-center font-medium font-Playwrite"
+              >
+                Transform your space with our exquisite home decor items that
+                blend style and functionality seamlessly.
+              </p>
+              <button
+                class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- About and featured post-->
+        <div class="w-full py-3 px-5">
+          <!-- About -->
+          <div class="flex flex-col justify-center items-center gap-6 mb-5">
+            <h2
+              class="font-Playfair leading-10 font-medium text-3xl text-center"
+            >
+              HomeyCo is a leading house decoration company dedicated to
+              creating beautiful living spaces for our clients. With a focus on
+              quality and customer satisfaction, we strive to exceed
+              expectations in every project we undertake.
+            </h2>
+            <button
+              class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
+            >
+              Learn More
+            </button>
+          </div>
+
+          <!-- Featured post -->
+          <div
+            class="mt-6 flex flex-col justify-center items-center gap-6 font-Playfair"
+          >
+            <h2 class="font-Playwrite font-bold text-xl">FEATURED POST</h2>
+            <div class="flex justify-center items-center flex-col gap-6">
+              <!-- Card 1 post -->
+              <div
+                class="flex flex-col gap-3 bg-gray-300 w-full pb-4 rounded-lg"
+              >
+                <img
+                  class="h-[300px] w-full"
+                  src="./res/assets/fpost-1.jpg"
+                  alt=""
+                />
+                <div
+                  class="px-3 flex flex-col justify-center items-center gap-3"
+                >
+                  <h3 class="font-bold text-lg">
+                    Modern Minimalist Dining Space
+                  </h3>
+                  <p class="text-black text-sm text-center">
+                    A minimalist dining setup with black chairs, pendant lights,
+                    and stylish wall shelves.
+                  </p>
+                  <button
+                    class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
+
+              <!-- Card 2 post -->
+              <div
+                class="flex flex-col gap-3 bg-gray-300 w-full pb-4 rounded-lg"
+              >
+                <img
+                  class="h-[300px] w-full"
+                  src="./res/assets/fpost-2.jpg"
+                  alt=""
+                />
+                <div
+                  class="px-3 flex flex-col justify-center items-center gap-3"
+                >
+                  <h3 class="font-bold text-lg">Rustic Reading Nook</h3>
+                  <p class="text-black text-sm text-center">
+                    A cozy wooden table with books, a cactus, and simple decor.
+                  </p>
+                  <button
+                    class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
+
+              <!-- Card 3 post -->
+              <div
+                class="flex flex-col gap-3 bg-gray-300 w-full pb-4 rounded-lg"
+              >
+                <img
+                  class="h-[300px] w-full"
+                  src="./res/assets/fpost-3.jpg"
+                  alt=""
+                />
+                <div
+                  class="px-3 flex flex-col justify-center items-center gap-3"
+                >
+                  <h3 class="font-bold text-lg">Pastel Ceramic Beauty</h3>
+                  <p class="text-black text-sm text-center">
+                    A collection of pastel and marbled vases for subtle
+                    elegance.
+                  </p>
+                  <button
+                    class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Category section -->
+        <div
+          class="flex flex-col justify-center items-center gap-3 w-full mt-6"
+        >
+          <h2 class="font-Playwrite font-bold text-xl">CATEGORIES</h2>
+          <div class="flex flex-col gap-3">
+            <!-- category 1 -->
+            <div
+              class="py-4 px-3 flex flex-col gap-3 justify-center items-center bg-slate-100 rounded-lg font-Playwrite"
+            >
+              <h3 class="text-center font-medium text-base">
+                If you liked the Modern Minimalist post, you might want to check
+                out the:
+              </h3>
+              <h3 class="text-center font-bold text-xl">Rooms Section</h3>
+              <button
+                class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
+              >
+                Explore
+              </button>
+            </div>
+
+            <!-- category 2 -->
+            <div
+              class="py-4 px-3 flex flex-col gap-3 justify-center items-center bg-slate-100 rounded-lg font-Playwrite"
+            >
+              <h3 class="text-center font-medium text-base">
+                If you liked the Rusty reading Nook post, you might want to
+                check out the:
+              </h3>
+              <h3 class="text-center font-bold text-xl">Furniture Section</h3>
+              <button
+                class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
+              >
+                Explore
+              </button>
+            </div>
+
+            <!-- category 3 -->
+            <div
+              class="py-4 px-3 flex flex-col gap-3 justify-center items-center bg-slate-100 rounded-lg font-Playwrite"
+            >
+              <h3 class="text-center font-medium text-base">
+                If you liked the Pastel Ceramic Beauty post, you might want to
+                check out the:
+              </h3>
+              <h3 class="text-center font-bold text-xl">Ceramic Section</h3>
+              <button
+                class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
