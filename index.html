@@ -232,7 +232,9 @@
         </div>
 
         <!-- Recent post -->
-        <div class="w-full flex mt-8 overflow-x-scroll snap-x snap-mandatory">
+        <div
+          class="w-full flex mt-8 overflow-x-scroll snap-x snap-mandatory px-3 gap-3"
+        >
           <!-- First post -->
           <div
             class="w-full flex-shrink-0 snap-center min-w-full flex flex-col items-start gap-6"
@@ -292,7 +294,48 @@
       </main>
       <footer class="bg-gray-100 py-10">
         <!-- NewsLetter -->
-        <div></div>
+        <section class="py-8 bg-white">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Subscribe to Our Newsletter</h2>
+            <form
+              class="max-w-lg mx-auto flex flex-col sm:flex-row items-center gap-4"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full sm:flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <button
+                type="submit"
+                class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </section>
+        <div class="container mx-auto text-center">
+          <div class="flex justify-center space-x-4 mb-4">
+            <a href="#" class="text-white hover:text-gray-400">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-400">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-400">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <p class="text-gray-400">© 2025 My Blog. All Rights Reserved.</p>
+          <nav class="flex justify-center space-x-4 mt-2">
+            <a href="#" class="text-gray-400 hover:text-white"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white"
+              >Terms of Service</a
+            >
+          </nav>
+        </div>
       </footer>
     </div>
   </body>
