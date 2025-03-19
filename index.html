@@ -3,339 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Blog-Web</title>
   </head>
-
-  <body>
+  <body class="bg-gray-50">
     <div>
-      <!--Header section-->
-      <header
-        class="w-full mb-4 py-4 px-3 flex justify-between items-center sticky top-0 z-10 backdrop-blur-md"
-      >
-        <!-- Nav divs -->
-        <!-- Logo div -->
-        <div class="flex items-center">
-          <img src="./res/assets/Mlogo.svg" alt="" />
-          <h1 class="font-bold font-Playfair text-xl">Homey.Co</h1>
+      <!-- Header -->
+      <header class="w-full py-4 px-6 flex justify-between items-center sticky top-0 z-10 bg-white shadow-md">
+        <div class="flex items-center gap-2">
+          <img src="./res/assets/Mlogo.svg" alt="Logo" class="h-8" />
+          <h1 class="font-bold text-xl">Homey.Co</h1>
         </div>
-
-        <!-- Cart & Menu div -->
-        <!-- cart btn -->
-        <div class="flex items-center gap-6">
-          <button
-            type="button"
-            class="py-2 px-4 bg-gray-500 rounded-full font-semibold font-Playwrite"
-          >
-            View Cart
-          </button>
-          <!-- Menu bar -->
-          <div>
-            <i class="fa-solid fa-bars-staggered text-2xl"></i>
-          </div>
+        <div class="flex items-center gap-4">
+          <button class="py-2 px-4 bg-gray-500 text-white rounded-full hidden md:block">View Cart</button>
+          <i class="fa-solid fa-bars text-2xl cursor-pointer md:hidden"></i>
         </div>
       </header>
 
-      <!-- Main section -->
-      <main class="w-full py-3 px-5">
-        <!-- hero -->
-        <div
-          class="mb-4 w-full flex flex-col justify-center items-center gap-4"
-        >
-          <h2 class="font-Playwrite font-bold text-xl">
-            DISCOVER OUR HOME DECOR
-          </h2>
-          <!-- hero img section -->
-          <div class="w-full relative">
-            <img src="./res/assets/hero-img.jpg" alt="" />
-            <div
-              class="flex flex-col items-center justify-center py-4 px-3 w-full bottom-0 absolute backdrop-blur-[20px] gap-6"
-            >
-              <p
-                class="text-black text-2xl text-center font-medium font-Playwrite"
-              >
-                Transform your space with our exquisite home decor items that
-                blend style and functionality seamlessly.
-              </p>
-              <button
-                class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
-              >
-                Explore
-              </button>
-            </div>
+      <!-- Main -->
+      <main class="w-full py-6 px-6">
+        <!-- Hero -->
+        <section class="w-full flex flex-col md:flex-row items-center gap-6">
+          <div class="md:w-1/2 text-center md:text-left">
+            <h2 class="text-2xl font-bold">DISCOVER OUR HOME DECOR</h2>
+            <p class="mt-4 text-lg">Transform your space with our exquisite home decor items.</p>
+            <button class="mt-4 py-2 px-6 bg-gray-500 text-white rounded-full">Explore</button>
           </div>
-          <!-- About -->
-          <div class="flex flex-col justify-center items-center gap-6 mb-5">
-            <h2
-              class="font-Playfair leading-10 font-medium text-3xl text-center"
-            >
-              HomeyCo is a leading house decoration company dedicated to
-              creating beautiful living spaces for our clients. With a focus on
-              quality and customer satisfaction, we strive to exceed
-              expectations in every project we undertake.
-            </h2>
-            <button
-              class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
-            >
-              Learn More
-            </button>
-          </div>
-        </div>
-
-        <!-- About and featured post-->
-        <div class="w-full py-3 px-5">
-          <!-- Featured post -->
-          <div
-            class="mt-6 flex flex-col justify-center items-center gap-6 font-Playfair"
-          >
-            <h2 class="font-Playwrite font-bold text-xl">FEATURED POST</h2>
-            <div class="flex justify-center items-center flex-col gap-6">
-              <!-- Card 1 post -->
-              <div
-                class="flex flex-col gap-3 bg-gray-300 w-full pb-4 rounded-lg"
-              >
-                <img
-                  class="h-[300px] w-full"
-                  src="./res/assets/fpost-1.jpg"
-                  alt=""
-                />
-                <div
-                  class="px-3 flex flex-col justify-center items-center gap-3"
-                >
-                  <h3 class="font-bold text-lg">
-                    Modern Minimalist Dining Space
-                  </h3>
-                  <p class="text-black text-sm text-center">
-                    A minimalist dining setup with black chairs, pendant lights,
-                    and stylish wall shelves.
-                  </p>
-                  <button
-                    class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
-                  >
-                    See More
-                  </button>
-                </div>
-              </div>
-
-              <!-- Card 2 post -->
-              <div
-                class="flex flex-col gap-3 bg-gray-300 w-full pb-4 rounded-lg"
-              >
-                <img
-                  class="h-[300px] w-full"
-                  src="./res/assets/fpost-2.jpg"
-                  alt=""
-                />
-                <div
-                  class="px-3 flex flex-col justify-center items-center gap-3"
-                >
-                  <h3 class="font-bold text-lg">Rustic Reading Nook</h3>
-                  <p class="text-black text-sm text-center">
-                    A cozy wooden table with books, a cactus, and simple decor.
-                  </p>
-                  <button
-                    class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
-                  >
-                    See More
-                  </button>
-                </div>
-              </div>
-
-              <!-- Card 3 post -->
-              <div
-                class="flex flex-col gap-3 bg-gray-300 w-full pb-4 rounded-lg"
-              >
-                <img
-                  class="h-[300px] w-full"
-                  src="./res/assets/fpost-3.jpg"
-                  alt=""
-                />
-                <div
-                  class="px-3 flex flex-col justify-center items-center gap-3"
-                >
-                  <h3 class="font-bold text-lg">Pastel Ceramic Beauty</h3>
-                  <p class="text-black text-sm text-center">
-                    A collection of pastel and marbled vases for subtle
-                    elegance.
-                  </p>
-                  <button
-                    class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
-                  >
-                    See More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Category section -->
-        <div
-          class="flex flex-col justify-center items-center gap-3 w-full mt-6"
-        >
-          <h2 class="font-Playwrite font-bold text-xl">CATEGORIES</h2>
-          <div class="flex flex-col gap-3">
-            <!-- category 1 -->
-            <div
-              class="py-4 px-3 flex flex-col gap-3 justify-center items-center bg-slate-100 rounded-lg font-Playwrite"
-            >
-              <h3 class="text-center font-medium text-base">
-                If you liked the Modern Minimalist post, you might want to check
-                out the:
-              </h3>
-              <h3 class="text-center font-bold text-xl">Rooms Section</h3>
-              <button
-                class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
-              >
-                Explore
-              </button>
-            </div>
-
-            <!-- category 2 -->
-            <div
-              class="py-4 px-3 flex flex-col gap-3 justify-center items-center bg-slate-100 rounded-lg font-Playwrite"
-            >
-              <h3 class="text-center font-medium text-base">
-                If you liked the Rusty reading Nook post, you might want to
-                check out the:
-              </h3>
-              <h3 class="text-center font-bold text-xl">Furniture Section</h3>
-              <button
-                class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
-              >
-                Explore
-              </button>
-            </div>
-
-            <!-- category 3 -->
-            <div
-              class="py-4 px-3 flex flex-col gap-3 justify-center items-center bg-slate-100 rounded-lg font-Playwrite"
-            >
-              <h3 class="text-center font-medium text-base">
-                If you liked the Pastel Ceramic Beauty post, you might want to
-                check out the:
-              </h3>
-              <h3 class="text-center font-bold text-xl">Ceramic Section</h3>
-              <button
-                class="py-2 px-4 inline-block bg-gray-500 rounded-full font-semibold font-Playwrite"
-              >
-                Explore
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Recent post -->
-        <div
-          class="w-full flex mt-8 overflow-x-scroll snap-x snap-mandatory px-3 gap-3"
-        >
-          <!-- First post -->
-          <div
-            class="w-full flex-shrink-0 snap-center min-w-full flex flex-col items-start gap-6"
-          >
-            <img
-              class="w-full h-[250px] object-cover"
-              src="./res/assets/Rpost-1.jpg"
-              alt="Modern Velvet Sofa"
-            />
-            <div class="flex flex-col gap-5 px-4">
-              <h3 class="text-xl font-semibold">Reading table & lamp</h3>
-              <div class="flex gap-6 text-sm text-gray-600">
-                <p>Homey.Co</p>
-                <p>Jan 21, 2025</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second post -->
-          <div
-            class="w-full flex-shrink-0 snap-center min-w-full flex flex-col items-start gap-6"
-          >
-            <img
-              class="w-full h-[250px] object-cover"
-              src="./res/assets/Rpost-2.jpg"
-              alt="Luxury Armchair"
-            />
-            <div class="flex flex-col gap-5 px-4">
-              <h3 class="text-xl font-semibold">
-                Minimal Wooden chair & table
-              </h3>
-              <div class="flex gap-6 text-sm text-gray-600">
-                <p>Furni.Style</p>
-                <p>Jan 19, 2025</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Third post -->
-          <div
-            class="w-full flex-shrink-0 snap-center min-w-full flex flex-col items-start gap-6"
-          >
-            <img
-              class="w-full h-[250px] object-cover"
-              src="./res/assets/Rpost-3.jpg"
-              alt="Minimal Wooden Chair"
-            />
-            <div class="flex flex-col gap-5 px-4">
-              <h3 class="text-xl font-semibold">Modern Velvet Sofa</h3>
-              <div class="flex gap-6 text-sm text-gray-600">
-                <p>CozyLiving</p>
-                <p>Jan 15, 2025</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <footer class="bg-gray-100 py-10">
-        <!-- NewsLetter -->
-        <section class="py-8 bg-white px-4">
-          <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Subscribe to Our Newsletter</h2>
-            <form
-              class="max-w-lg mx-auto flex flex-col sm:flex-row items-center gap-4"
-            >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="w-full sm:flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <button
-                type="submit"
-                class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600"
-              >
-                Subscribe
-              </button>
-            </form>
+          <div class="md:w-1/2">
+            <img src="./res/assets/hero-img.jpg" alt="Hero" class="w-full rounded-lg shadow-md" />
           </div>
         </section>
-        <div class="container mx-auto text-center">
-          <div class="flex justify-center space-x-4 mb-4 py-3">
-            <a href="#" class="text-blue-600 hover:text-gray-400">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-blue-600 hover:text-gray-400">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="text-blue-600 hover:text-gray-400">
-              <i class="fab fa-instagram"></i>
-            </a>
+
+        <!-- Featured Posts -->
+        <section class="mt-8">
+          <h2 class="text-xl font-bold text-center">FEATURED POST</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <!-- Post Cards -->
+            <div class="bg-gray-300 p-4 rounded-lg">
+              <img src="./res/assets/fpost-1.jpg" class="w-full h-48 object-cover rounded-lg" />
+              <h3 class="mt-3 font-bold">Modern Minimalist Dining Space</h3>
+              <p class="text-sm mt-1">A minimalist dining setup with stylish wall shelves.</p>
+              <button class="mt-3 py-2 px-4 bg-gray-500 text-white rounded-full">See More</button>
+            </div>
+            <div class="bg-gray-300 p-4 rounded-lg">
+              <img src="./res/assets/fpost-2.jpg" class="w-full h-48 object-cover rounded-lg" />
+              <h3 class="mt-3 font-bold">Rustic Reading Nook</h3>
+              <p class="text-sm mt-1">A cozy wooden table with books and simple decor.</p>
+              <button class="mt-3 py-2 px-4 bg-gray-500 text-white rounded-full">See More</button>
+            </div>
+            <div class="bg-gray-300 p-4 rounded-lg">
+              <img src="./res/assets/fpost-3.jpg" class="w-full h-48 object-cover rounded-lg" />
+              <h3 class="mt-3 font-bold">Pastel Ceramic Beauty</h3>
+              <p class="text-sm mt-1">A collection of pastel and marbled vases.</p>
+              <button class="mt-3 py-2 px-4 bg-gray-500 text-white rounded-full">See More</button>
+            </div>
           </div>
-          <p class="text-gray-400">© 2025 My Blog. All Rights Reserved.</p>
-          <nav class="flex justify-center space-x-4 mt-2">
-            <a href="#" class="text-gray-400 hover:text-white"
-              >Privacy Policy</a
-            >
-            <a href="#" class="text-gray-400 hover:text-white"
-              >Terms of Service</a
-            >
-          </nav>
+        </section>
+
+        <!-- Categories -->
+        <section class="mt-10">
+          <h2 class="text-xl font-bold text-center">CATEGORIES</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div class="bg-gray-200 p-6 rounded-lg text-center">
+              <h3 class="text-lg font-bold">Rooms Section</h3>
+              <button class="mt-3 py-2 px-4 bg-gray-500 text-white rounded-full">Explore</button>
+            </div>
+            <div class="bg-gray-200 p-6 rounded-lg text-center">
+              <h3 class="text-lg font-bold">Furniture Section</h3>
+              <button class="mt-3 py-2 px-4 bg-gray-500 text-white rounded-full">Explore</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="bg-gray-100 py-10 text-center">
+        <h2 class="text-xl font-bold">Subscribe to Our Newsletter</h2>
+        <form class="max-w-md mx-auto mt-4 flex flex-col sm:flex-row gap-4">
+          <input type="email" placeholder="Enter your email" class="p-3 border rounded-md flex-1" />
+          <button class="bg-blue-500 text-white px-6 py-3 rounded-md">Subscribe</button>
+        </form>
+        <div class="flex justify-center gap-4 mt-4">
+          <a href="#" class="text-blue-600 hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-blue-600 hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-blue-600 hover:text-gray-400"><i class="fab fa-instagram"></i></a>
         </div>
+        <p class="text-gray-500 mt-4">© 2025 Homey.Co. All Rights Reserved.</p>
       </footer>
     </div>
   </body>
